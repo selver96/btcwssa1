@@ -55,5 +55,5 @@ def parser():
         write_to_json(content)
     else:
         LOGGER.warning('Failed, response status code is ' + str(response.status_code))
-
+# called parser func
 parser()
