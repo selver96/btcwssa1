@@ -2,14 +2,14 @@ import sys
 import json
 import requests
 from bs4 import BeautifulSoup
-from logger import get_logger
+from logger import get_logger # we import own module logger
 
 #Global kullandıyımız değişkenler
 URL = "https://www.nytimes.com/crosswords/game/mini"
 APP_NAME = "result"
 LOGGER = get_logger()
 
-
+# For get HTML
 def get_html(url):
     LOGGER.info("Request sent for get HTML")
     return requests.get(url)
